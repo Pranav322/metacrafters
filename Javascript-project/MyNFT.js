@@ -8,6 +8,7 @@ Assessment Requirements
 4. For good measure, getTotalSupply() should return the number of NFT's you have created
 */
 
+// creating an NFT management system where we mint NFTs, list their metadata, and track the total supply."
 // create a variable to hold your NFT's
 const TotalNFTs = [];
 
