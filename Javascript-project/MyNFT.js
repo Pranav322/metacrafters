@@ -9,45 +9,42 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
-const TotalNFTs = []
+const TotalNFTs = [];
 
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT(_name, _designation, _age, _residence) {
-	
-	const NFT = {
-		"name" : _name,
-		"designation" : _designation,
-		"age" : _age,
-		"residence" : _residence
-
-	}
-	TotalNFTs.push(NFT);
-	console.log("Minted: " + _name);
+function mintNFT(_name, _id, _gender, _salary) {
+    const NFT = {
+        "name": _name,
+        "id": _id,
+        "gender": _gender,
+        "salary": _salary
+    };
+    TotalNFTs.push(NFT);
+    console.log(`Minted: ${_name}`);
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs() {
-	for(let i = 0;i<TotalNFTs.length;i++) {
-		console.log("\nname: "+TotalNFTs[i].name);
-		console.log("designation: "+TotalNFTs[i].designation);
-		console.log("age: "+TotalNFTs[i].age);
-		console.log("residence: "+TotalNFTs[i].residence);
-	}
-
+    for (let i = 0; i < TotalNFTs.length; i++) {
+        console.log(`\nName: ${TotalNFTs[i].name}`);
+        console.log(`Employee ID: ${TotalNFTs[i].id}`);
+        console.log(`Gender: ${TotalNFTs[i].gender}`);
+        console.log(`Salary: ${TotalNFTs[i].salary}`);
+    }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-	console.log("Total Supply: "+TotalNFTs.length);
+    console.log(`Total Supply: ${TotalNFTs.length}`);
 }
 
 // call your functions below this line
-mintNFT("Alan Turing", "Manager", "43", "England");
-mintNFT("John Nash", "Resercher", "65", "West Virginia");
-mintNFT("Steve Jobs", "CEO", "56", "San Fransisco");
+mintNFT("Alan Turing", 203, "Male", "$69000");
+mintNFT("John Nash", 304, "Male", "$70000");
+mintNFT("Steve Jobs", 405, "Male", "$100000");
 listNFTs();
 console.log("\n");
 getTotalSupply();
