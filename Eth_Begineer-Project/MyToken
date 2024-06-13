@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract MyToken {
+    // Public variables to store the details about the token
+    string public name = "PraToken"; // Token Name
+    string public symbol = "PRTKs";   // Token Abbreviation
+    uint public totalSupply;        // Total Supply
+
+    // Mapping to store the balance of each address
+    mapping(address => uint) public balances;
+
+    // Mint function to create new tokens
+    function mint(address _to, uint _amount) public {
+        totalSupply += _amount;        // Increase the total supply by the specified amount
+        balances[_to] += _amount;      // Increase the balance of the specified address by the specified amount
+    }
+
+    // Burn function to destroy tokens
+    function burn(address _address, uint _amount) public {
+        if (balances[_address] >= _amount) {  
+            totalSupply -= _amount;      // Decrease the total supply by the specified amount
+            balances[_address] -= _amount;   // Decrease the balance of the specified address by the specified amount
+        }
+    }
+}
