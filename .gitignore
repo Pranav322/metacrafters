@@ -1,0 +1,61 @@
+# Node modules
+node_modules/
+
+# Hardhat cache & artifacts
+cache/
+artifacts/
+
+# Dotenv environment variables file
+.env
+
+# Truffle and Hardhat files
+*.log
+*.tlog
+*.cover
+.truffle/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Hardhat specific files
+deployments/
+exported/
+
+# Hardhat specific files
+typechain/
+
+# Frontend build output
+build/
+
+# MacOS system files
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore React build output
+build/
+dist/
+
+# Ignore React static files
+public/static/
+
+# Ignore Test outputs
+test-results/
+
+# Ignore NPM lock files
+package-lock.json
+yarn.lock
+
+# Ignore generated TypeScript files
+*.tsbuildinfo
+
+# Ignore eslint cache
+.eslintcache
