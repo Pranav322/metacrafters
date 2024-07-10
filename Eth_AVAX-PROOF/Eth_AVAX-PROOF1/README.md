@@ -1,23 +1,41 @@
-# ETH_AVAX-PROOF-INTERMEDIATE-EVM_COURSE
+# ErrorHandling Contract
 
-## Project Overview
-This project implements an advanced smart contract using Solidity that demonstrates the use of `require()`, `assert()`, and `revert()` statements. The contract allows only the owner to deposit and withdraw funds.
+This is a Solidity smart contract that demonstrates the use of `require()`, `assert()`, and `revert()` statements.
 
-## Functionality
-- `deposit()`: Allows users to deposit funds into their balance. Uses `require()` to ensure the deposit amount is greater than zero.
-- `withdraw(uint256 amount)`: Allows only the owner to withdraw funds. Uses `require()` to ensure the withdraw amount is greater than zero and that the user has sufficient balance. Uses `assert()` to validate the internal state.
-- `resetBalance()`: Allows only the owner to reset their balance. Uses `revert()` to ensure only the owner can reset the balance.
-- `getBalance()`: Returns the balance of the calling user.
+## License
 
-## How to Use
-1. Deploy the contract on an Ethereum-compatible blockchain.
-2. Call the `deposit()` function with a positive value to increase the balance.
-3. Call the `withdraw()` function to withdraw funds (only the owner can do this).
-4. Call the `resetBalance()` function to reset the balance (only the owner can do this).
-5. Call the `getBalance()` function to check your balance.
+This contract uses the MIT License.
 
-## Video Walk-through
-[Watch the code walk-through on Loom](https://www.loom.com/share/0178e3914e994ce083a7d0a1b21e22cc)
+## Prerequisites
 
-## Author
-Pranav kumar
+- Solidity ^0.8.18
+
+## Contract Details
+
+The `ErrorHandlingContract` is a smart contract that manages a `balance` variable.
+
+- **balance**: Stores the total balance managed by the contract.
+
+### Functions
+
+1. **constructor()**
+   - Initializes the balance to 0.
+
+2. **deposit(uint256 amount) external**
+   - Allows users to add funds to the balance.
+   - Uses `require(amount > 0, "Deposit amount must be greater than zero")` to ensure the deposit amount is greater than zero.
+
+3. **withdraw(uint256 amount) external**
+   - Lets users withdraw funds from the balance.
+   - Uses `require(amount > 0, "Withdrawal amount must be greater than zero")` to ensure the withdrawal amount is greater than zero.
+   - Uses `revert("Insufficient balance")` if the withdrawal amount exceeds the available balance.
+
+4. **checkBalance() external view returns (uint256)**
+   - Returns the current value of the `balance` variable.
+   - Uses `assert(balance >= 0)` to ensure the balance is always greater than or equal to zero.
+
+Overall, the contract implements basic error handling and validation using the `require()`, `assert()`, and `revert()` statements to ensure proper behavior and prevent incorrect operations.
+
+## Video Walkthrough
+
+[Watch the video walkthrough](https://www.loom.com/share/5ddcace9ced0488d9d2f129c540fad89)
