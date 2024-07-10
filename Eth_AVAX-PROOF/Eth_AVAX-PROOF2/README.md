@@ -44,5 +44,3 @@ Waits for the contract to be mined and deployed by using the deployed() function
 Logs the deployed contract's address to the console.
 Calls the main() function, handles errors, and exits the process
 
-Video Walkthrough
-https://www.loom.com/share/82210c4a7d344467a6d487efbf9ffcc2
