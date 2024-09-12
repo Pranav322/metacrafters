@@ -1,9 +1,13 @@
+# Project Structure
 
-# Please find all the test related folders/files inside
+- **Test-Related Files and Folders**:  
+  Please locate all files and directories associated with testing within the project structure.
 
-## The folder named Javascript-project contains the final project of Js-proof course\
+- **`Javascript-Project` Folder**:  
+  This directory contains the completed project for the **JavaScript Proof Course**, representing the final deliverable for the course.
 
-## The folder names Eth_Begineer-Project contains the final project of ETH Beginner PRoject all modules 
+- **`Eth_Beginner-Project` Folder**:  
+  This folder includes the final project for the **Ethereum Beginner Project**, covering all the modules completed in this course.
 
-## The folder named ETH_AVAX-PROOF contains all 4 projects of this module inside
-
+- **`ETH_AVAX-PROOF` Folder**:  
+  Inside this directory, you will find the four distinct projects developed as part of the **ETH AVAX Proof Module**.
