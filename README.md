@@ -11,3 +11,6 @@
 
 - **`ETH_AVAX-PROOF` Folder**:  
   Inside this directory, you will find the four distinct projects developed as part of the **ETH AVAX Proof Module**.
+
+- **`Advanced_Avalanche` Folder**:  
+  This folder contains the projects and assignments completed as part of the Advanced Avalanche course, demonstrating more complex concepts and applications within the Avalanche ecosystem.
