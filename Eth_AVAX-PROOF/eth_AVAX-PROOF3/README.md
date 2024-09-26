@@ -30,4 +30,4 @@ The constructor function takes an initialOwner address as a parameter. It is exe
   - This function allows any token holder to burn (destroy) a specified amount of their own tokens. It takes one parameter: `amount` (the number of tokens to burn). Inside the function, the `_burn` function from the ERC20 contract is called to destroy the specified amount of tokens from the sender's balance.
 
 ### Video Walkthrough
-[Video Walkthrough](https://www.loom.com/share/da08c8fef3104874b4fae51bc04334cb)
+[Video Walkthrough](https://www.loom.com/share/f34fc97acf01461ba37facf9151c66d2)
